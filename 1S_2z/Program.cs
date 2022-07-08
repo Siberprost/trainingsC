@@ -5,7 +5,7 @@ if(number_week == 3)
 {
     Console.WriteLine("Среда, пить рано!");
 }
-if(number_week == 5)
+else if(number_week == 5)
 {
     Console.WriteLine("Пятница, сегодя вечером нажрусь!");
 }
