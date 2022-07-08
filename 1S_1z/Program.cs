@@ -4,12 +4,12 @@ Console.Write("Введите число 2: ");
 string number_2 = Console.ReadLine();
 
 
-if(number_1 == number_1 * number_1)
+if(number_2 == number_1 * number_1)
 {
-    Console.WriteLine("1 число является квадратным корнем второго");
+    Console.WriteLine("2 число является квадратом первого");
 }
 else
 {
-    Console.WriteLine("1 число не является квадратным корнем второго");
+    Console.WriteLine("2 число не является квадратом первого");
 
 }
