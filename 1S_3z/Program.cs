@@ -12,3 +12,9 @@ int Power(int currentNumber)
 int number = 5;
 int result = Power(number);
 Console.WriteLine(result);
+
+//процедура пишется с помощью 
+//Void(Procedura)
+//{
+    //сама процедура
+//}
