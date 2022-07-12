@@ -23,7 +23,26 @@ void PrintArray(int[] coll)
 }
 // создан "метод" ака "функция", которрая выводит на экран значения с первого по последнее на экран
 
+int IndexOf(int[] collection, int find)
+{
+    int count = collection.Length;
+    int index = 0;
+    int position = -1;
+    // -1 в данном случае и в общепринятой практике уберегает нас от того, чтобы несуществующий  в массиве элемент не был показан как 0.
 
+    while (index < count)
+    {
+        if(collection[index] == find)
+        {
+            position = index;
+            break;
+        }
+        index++;
+    }
+    return position;
+}
+
+// IndexOf ищет номер искомого числа в массиве
 int[] array = new int[10];
 // конструкция new int[10] значит "создай новый массив, в котором будет 10 элементов. По умолчанию он зполняется нулями. Чтобы заполнить использовали код с 1 по 12 строку. 
 
@@ -33,3 +52,9 @@ PrintArray(array);
 //строка 27- определили, что существует массив из 10 элементов
 //строка 30 - заполнили массив с момощью метода FillArray
 //строка 31 - вывели на экран результат отработки строк 27 и 30 с помощью метода PrintArray
+Console.WriteLine();
+
+//
+int pos = IndexOf(array, 4);
+Console.WriteLine(pos);
+
