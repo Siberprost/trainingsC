@@ -91,19 +91,19 @@ Console.WriteLine (S);
 
 void Zadacha22()
 {
-//Задача 22: Напишите программу, которая принимает на вход 
-//число (N) и выдаёт таблицу квадратов чисел от 1 до N.
+    //Задача 22: Напишите программу, которая принимает на вход 
+    //число (N) и выдаёт таблицу квадратов чисел от 1 до N.
 
-Console.WriteLine("Введите число");
+    Console.WriteLine("Введите число");
     Console.WriteLine("N:");
     int n = Convert.ToInt32(Console.ReadLine());
 
-int strt = 1;
-while (strt <= n)
-{
-Console.Write (strt*strt + "|  |");
-strt++;
-}
+    int strt = 1;
+    while (strt <= n)
+    {
+        Console.Write (strt*strt + "|  |");
+        strt++;
+    }
 }
 
 
